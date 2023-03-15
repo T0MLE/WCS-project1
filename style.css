@@ -11,7 +11,8 @@
     --second-theme-color: #003D5B;
     --pixel-font: 'Press Start 2P', cursive;
     --second-font: 'Josefin Sans', sans-serif;
-    font-family: var(--second-font)
+    font-family: var(--second-font);
+    box-sizing: border-box;
 }
 
 .title {
@@ -20,8 +21,7 @@
 
 #sec-experience {
     background-color: var(--first-theme-color);
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0px 20px 0px;
 }
 
 #sec-experience h3 {
