@@ -27,7 +27,7 @@
 #sec-experience h3 {
     color: var(--secondary-color);
     font-size: 32px;
-    margin-bottom: 32px;
+    padding: 32px 0px 32px 0px;
 }
 
 #card-container {
@@ -38,14 +38,35 @@
 
 .card {
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--secondary-color);
     width: 350px;
-    padding: 16px 8px 16px 8px;
+    height: 500px;
     border-radius: 40px;
-    margin-bottom: 32px;;
+    margin: auto;
+    margin-bottom: 32px;
+    padding: 16px;
 }
 
 .card h4 {
     color: var(--first-theme-color);
     font-family: 'Press Start 2P', cursive;
+    width: 290px;
+    margin: 8px auto 16px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card img {
+    width: 290px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.card p {
+    font-size: 20px;
+    color: var(--first-theme-color);
+    width: 290px;
+    margin: 16px auto;
+    text-align: justify;
 }
