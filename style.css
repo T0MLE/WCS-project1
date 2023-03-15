@@ -9,6 +9,8 @@
     --first-theme-color: #AB433F;
     --secondary-color: #E7D7C1;
     --second-theme-color: #003D5B;
+    --pixel-font: 'Press Start 2P', cursive;
+    --second-font: 'Josefin Sans', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
 }
 
