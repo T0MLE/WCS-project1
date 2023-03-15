@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    --first-theme-color: #AB433F;
+    --secondary-color: #E7D7C1;
+    --second-theme-color: #003D5B;
+}
+
