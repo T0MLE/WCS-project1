@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
     margin: 0;
@@ -12,3 +12,6 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+title {
+    font-family: 'Press Start 2P', cursive;
+}
