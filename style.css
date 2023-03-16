@@ -21,7 +21,7 @@
 
 #sec-experience {
     background-color: var(--first-theme-color);
-    padding: 0px 20px 0px;
+    padding: 0px 20px 32px 20px;
 }
 
 #sec-experience h3 {
@@ -32,20 +32,33 @@
 
 #card-container {
     display: flex;
-    flex-wrap: wrap;
-
+    width: 100%;
+    height: 550px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: auto;
+    scroll-snap-type: x mandatory;
+    border-radius: 40px;
+    scroll-behavior: smooth;
+    
 }
+
+#card-container::-webkit-scrollbar{
+    display: none;
+  }
 
 .card {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--secondary-color);
-    width: 350px;
-    height: 500px;
+    width: 100%;
+    max-width: 338px;
+    height: 100%;
     border-radius: 40px;
-    margin: auto;
-    margin-bottom: 32px;
-    padding: 16px;
+    margin: 0px 16px 32px 0px;
+    padding: 16px 24px 16px;
+    scroll-snap-align: center;
+
 }
 
 .card h4 {
@@ -58,7 +71,7 @@
 }
 
 .card img {
-    width: 290px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 20px;
 }
