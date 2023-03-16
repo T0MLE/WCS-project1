@@ -10,8 +10,69 @@
     --secondary-color: #E7D7C1;
     --second-theme-color: #003D5B;
     font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+
 }
 
-title {
+
+
+div#hobbies{
+    background-color: var(--secondary-color);
+    padding-bottom: 32px;
+}
+
+div#getInTouch{
+    background-color: var(--first-theme-color);
+}
+
+h3{
     font-family: 'Press Start 2P', cursive;
+    height: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+div#hobbies h3{
+    color : var(--first-theme-color);
+}
+
+div#getInTouch h3{
+    color : var(--secondary-color);
+}
+
+ul#hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin : auto;
+    margin-top: 30px;
+
+}
+
+li.hobbies{
+    margin-bottom: 20px;
+    display : flex;
+    justify-content: center;
+}
+
+img.hobbiesImg {
+    width : 100%;
+    border-radius: 30px;
+}
+
+
+ul#logos {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin : auto;
+    margin-top: 50px;
+    padding-bottom: 30px;
 }
