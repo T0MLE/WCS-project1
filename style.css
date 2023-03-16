@@ -9,12 +9,14 @@
     --first-theme-color: #AB433F;
     --secondary-color: #E7D7C1;
     --second-theme-color: #003D5B;
+    --pixel-font: 'Press Start 2P', cursive;
+    --second-font: 'Josefin Sans', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 
 }
 
-
+/* -----------------------------------------------------STYLE DIV----------------------------------------------------- */
 
 div#hobbies{
     background-color: var(--secondary-color);
@@ -25,6 +27,8 @@ div#getInTouch{
     background-color: var(--first-theme-color);
 }
 
+
+/* -----------------------------------------------------STYLE TEXTES----------------------------------------------------- */
 h3{
     font-family: 'Press Start 2P', cursive;
     height: 100px;
@@ -43,7 +47,9 @@ div#getInTouch h3{
     color : var(--secondary-color);
 }
 
-ul#hobbies {
+/* -----------------------------------------------------STYLE HOBBIES----------------------------------------------------- */
+
+.squareList {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -54,17 +60,61 @@ ul#hobbies {
 
 }
 
-li.hobbies{
+.square{
+    width: 350px ;
+    height: 350px;
     margin-bottom: 20px;
-    display : flex;
-    justify-content: center;
-}
-
-img.hobbiesImg {
-    width : 100%;
     border-radius: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
+
+
+/* -------------STYLE IMAGE FOOTBALL----------- */
+
+.imageFootball{
+background: url("sources/football.png");
+background-size: auto 100%; 
+color : transparent;
+}
+
+
+/* -------------STYLE IMAGE VIDEOGAME----------- */
+
+.imageVideoGame{
+    background: url("sources/videogames.png");
+    background-size: auto 100%; 
+    color : transparent;
+    }
+    
+    
+/* -------------STYLE IMAGE FISHING----------- */
+
+.imageFishing{
+    background: url("sources/fishing.png");
+    background-size: auto 100%; 
+    color : transparent;
+    }
+
+    
+/* -------------STYLES TEXT-------------------- */
+    .text{
+        background: none;
+        background-color: var(--first-theme-color);
+        color : var(--secondary-color);
+    }
+
+
+    
+
+
+/* -----------------------------------------------------STYLE GETINTOUCH----------------------------------------------------- */
 
 ul#logos {
 
@@ -76,3 +126,4 @@ ul#logos {
     margin-top: 50px;
     padding-bottom: 30px;
 }
+
