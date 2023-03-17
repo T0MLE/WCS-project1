@@ -35,6 +35,8 @@ const contact = document.querySelector('.contact-me')
   toggleTheme.addEventListener('change', function() {
       button.classList.toggle('span-move');
       document.body.classList.toggle('blue-theme');
+      document.body.classList.toggle('red-theme');
+
       menu.classList.toggle('blue-theme-menu');
       if (document.body.classList.contains('blue-theme')) {
         contact.classList.add('blue-theme-font');

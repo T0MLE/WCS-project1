@@ -13,6 +13,7 @@
     --second-font: 'Josefin Sans', sans-serif;
     font-family: var(--second-font);
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .title {
@@ -145,7 +146,7 @@
 }
 
 #Omar {
-    background-color: var(--first-theme-color);
+    height: 100vh;
    }
 
   /* NAVIGATION STYLES */
@@ -282,8 +283,8 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
     background-image: url("assets/mario_home.png");
     background-position: center;
     background-size: cover;
@@ -337,6 +338,10 @@ h2 {
 
   .blue-theme {
     background-color: var(--second-theme-color) ;
+  }
+
+  .red-theme {
+    background-color: var(--first-theme-color);
   }
   .red-theme-font {
     color: var(--first-theme-color)
