@@ -9,10 +9,359 @@
     --first-theme-color: #AB433F;
     --secondary-color: #E7D7C1;
     --second-theme-color: #003D5B;
-    font-family: 'Josefin Sans', sans-serif
+    --pixel-font: 'Press Start 2P', cursive;
+    --second-font: 'Josefin Sans', sans-serif;
+    font-family: var(--second-font);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-title {
+.title {
     font-family: 'Press Start 2P', cursive;
 }
 
+/* SECTION ABOUT ME SAVERIO */
+
+.about-me {
+  background-color: var(--secondary-color);
+  width: auto;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-me h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8vw;
+  text-align: left;
+  margin-top: 32px;
+  color: var(--first-theme-color);
+  padding: 0 16px 0 16px;
+}
+
+.about-me .description {
+  font-family: var(--second-font);
+  color: var(--first-theme-color);
+  text-align:justify;
+  margin-top: 10px;
+  line-height: normal;
+  font-size: 20px;
+  display: flex;
+  padding: 0 16px 0 16px;
+  }
+
+.about-me img {
+  width: 100vw;
+  height: auto;
+}
+
+/* SECTION EXPERIENCE TOM */
+
+#sec-experience {
+    background-color: var(--first-theme-color);
+    padding: 0px 20px 32px 20px;
+}
+
+#sec-experience h3 {
+    color: var(--secondary-color);
+    font-size: 28px;
+    padding: 32px 0px 32px 0px;
+}
+
+#card-container {
+    display: flex;
+    width: 100%;
+    height: 550px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: auto;
+    scroll-snap-type: x mandatory;
+    border-radius: 40px;
+    scroll-behavior: smooth;
+    
+}
+
+#card-container::-webkit-scrollbar{
+    display: none;
+  }
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    width: 100%;
+    max-width: 338px;
+    height: 100%;
+    border-radius: 40px;
+    margin: 0px 16px 32px 0px;
+    padding: 16px 24px 16px;
+    scroll-snap-align: center;
+
+}
+
+.card h4 {
+    color: var(--first-theme-color);
+    font-family: 'Press Start 2P', cursive;
+    width: 290px;
+    margin: 8px auto 16px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.card p {
+    font-size: 20px;
+    color: var(--first-theme-color);
+    width: 290px;
+    margin: 16px auto;
+    text-align: justify;
+}
+
+#indicator-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+.slide-indicator {
+    height: 10px;
+    width: 10px;
+    background-color: var(--secondary-color);
+    opacity: 0.6;
+    border-radius: 50%;
+    margin: 16px 8px 8px 8px;
+
+}
+
+.indic-active {
+    transform: scale(1.6);
+    opacity: 1;
+}
+
+#Omar {
+    height: 100vh;
+   }
+
+  /* NAVIGATION STYLES */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  
+  .menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0;
+    padding: 0.5rem;
+  }
+  
+  .menu li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+
+  }
+  
+  /* MENU BUTTON STYLES */
+  .menu-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 24px;
+    width: 30px;
+    
+  }
+  
+  .menu-btn__lines {
+    
+    background-color: var(--secondary-color);
+    height: 4px;
+    width: 100%;
+    margin: 3px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* OPEN MENU BUTTON STYLES */
+  .menu-btn.open .menu-btn__lines:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-btn.open .menu-btn__lines:nth-child(2) {
+    opacity: 0;
+    
+  }
+  
+  .menu-btn.open .menu-btn__lines:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  } 
+
+  /* CONTACT ME BUTTON */
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    height: 2.5rem;
+    width: 5.7rem;
+    border-radius: 1.7rem;
+  }
+
+  .contact a {
+    font-size: 15px;
+  }
+
+  
+
+
+  
+  
+  /* Media query for mobile */
+  @media (max-width: 767px) {
+    .menu-btn {
+      display: flex;
+    }
+  
+    .menu {
+      background-color: #ab433f73;
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: 0.3s ease-in-out;
+    }
+  
+    .menu-btn.open + .menu {
+      height: 100px;
+      margin-top: 20px;
+    }
+  }
+  
+
+
+
+
+  /* Main PAGE */
+
+   h1, h2 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    padding: 3rem 0 3.5rem 0;
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 46px;
+}
+h2 {
+    font-size: 32px;
+}
+
+
+.img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    background-image: url("assets/mario_home.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    
+}
+
+.toggle-button {
+    display: flex;
+    justify-content: center;
+
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* CHECKBOX */
+   .toggle-theme {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .toggle-theme span {
+    width: 21px;
+    height: 21px;
+    margin-left: 2px;
+    border-radius: 50%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+
+  .blue-theme {
+    background-color: var(--second-theme-color) ;
+  }
+
+  .red-theme {
+    background-color: var(--first-theme-color);
+  }
+  .red-theme-font {
+    color: var(--first-theme-color)
+  }
+  .blue-theme-font {
+    color: var(--second-theme-color);
+  }
+  
+  .blue-theme-menu {
+    background-color: #003d5b6e;
+  }
+
+  .span-move {
+    transform: translateX(120%);
+    background-color: var(--first-theme-color);
+  }
+
+  .button-color-red {
+    background-color: var(--first-theme-color) ;
+  }
+  .button-color-blue {
+    background-color: var(--second-theme-color);
+  }
