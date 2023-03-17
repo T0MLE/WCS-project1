@@ -5,13 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
   </head>
 
-  <body>
-    <section></section>
-    <section></section>
-    <section></section>
+  <body class="red-theme">
+    <section id="Omar">
+      <nav>
+        <div class="menu-btn">
+          <div class="menu-btn__lines"></div>
+          <div class="menu-btn__lines"></div>
+          <div class="menu-btn__lines"></div>
+        </div>
+        <ul class="menu">
+          <audio id="myAudio2">
+            <source src="assets/MarioCoin.mp3" type="audio/mpeg" />
+          </audio>
+          <li><a href="#about-me" onclick="playAudio2()">About me</a></li>
+          <li>
+            <a href="#sec-experience" onclick="playAudio2()">Experiences</a>
+          </li>
+          <li><a href="#hobbies" onclick="playAudio2()">Hobbies</a></li>
+        </ul>
+        <div class="contact">
+          <a href="#" class="contact-me red-theme-font">Contact me</a>
+        </div>
+      </nav>
+
+      <!-- -------------------------------------------------section Home Page--------------------------------------------------------------- -->
+
+      <div class="page">
+        <h1>IT'S ME MARIO</h1>
+        <audio id="myAudio">
+          <source src="assets/ItsMeMario.mp3" type="audio/mpeg" />
+        </audio>
+        <div class="img" onclick="playAudio()"></div>
+        <h2>Plombier chauffagiste</h2>
+      </div>
+
+      <div class="toggle-button">
+        <label for="toggle-checkbox" class="toggle-theme">
+          <span class="button-color-red"></span>
+          <input type="checkbox" id="toggle-checkbox" />
+        </label>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------section About me--------------------------------------------------------------- -->
+
+    <section class="about-me" id="about-me">
+      <h2>About Me</h2>
+      <p class="description">
+        En tant que plombier et héros, j'aime aider les gens, peu importe où je
+        me trouve et je suis fier d'être en mesure de le faire grâce à mes
+        compétences de plombier chauffagiste.<br /><br />
+        Polyvalent, je suis diplômé d’un CAP Plomberie et tuyauterie au lycée
+        Marcel Pagnol à Noisy-Le-Grand, je dispose également d’un brevet de
+        secourisme et d’une carte VTC.
+      </p>
+      <img src="assets/MarioNonna.png" alt="Mario&Mammie" />
+    </section>
+
+    <!-- -------------------------------------------------section Expérience--------------------------------------------------------------- -->
+
+    <section id="sec-experience">
+      <h3 class="title">Experience</h3>
+      <div id="card-container">
+        <div class="card">
+          <h4>Plombier.</h4>
+          <img src="assets/fix_pipe.png" alt="Mario réparant un tuyau" />
+          <p>
+            Expérience pluriannuelle en tant que plombier au Royaume Champignon,
+            avec des compétences dans la réparation de tuyaux et la résolution
+            de problèmes hydrauliques.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Pilote.</h4>
+          <img src="assets/mario_f1.png" alt="Mario qui pilote une formule 1" />
+          <p>
+            Pilote professionnel de kart, avec de nombreux succès et trophées
+            remportés dans des courses à travers le monde. Invaincu sur la route
+            arc-en-ciel
+          </p>
+        </div>
+        <div class="card">
+          <h4>Sauveteur.</h4>
+          <img
+            src="assets/mario_peach.png"
+            alt="Mario avec princesse Peach sur son dos"
+          />
+          <p>
+            Expérience en tant que sauveur de la princesse Peach, démontrant des
+            capacités à intervenir sur des situations périlleuses et à combattre
+            des adversaires dangereux.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Fighter.</h4>
+          <img
+            src="assets/mario_fighter.png"
+            alt="Mario avec des gants de boxe sur un ring"
+          />
+          <p>
+            Champion de MMA dans la division des poids lourds de l’organisation
+            Smash Bros, notamment grâce à mon saut spécial
+          </p>
+        </div>
+      </div>
+      <div id="indicator-container">
+        <div class="slide-indicator indic-active"></div>
+        <div class="slide-indicator"></div>
+        <div class="slide-indicator"></div>
+        <div class="slide-indicator"></div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------section Hobbies--------------------------------------------------------------- -->
 
     <section id="hobbies">
       <div id="hobbies">
@@ -23,11 +131,11 @@
               L'un de mes passe-temps préférés est de jouer au football. <br />
               <br />
               J'aime la vue d'un terrain qui attend un match. La sensation du
-              gazon bien taillé sous mon pied. Le plaisir d'une belle frappe. Le
+              gazon bien taillé sous mon pied. Le plaisir d'une belle frappe, le
               frisson d’un appel de balle. L’explosion de joie du stade lorsque
               le ballon s’écrase en lucarne...<br />
               <br />
-              J’aime la complicité qui naît sur une passe. L'amitié qui tisse à
+              J’aime la complicité qui naît sur une passe, l'amitié qui tisse à
               chaque entrainement. La beauté partagée des corps dans l'effort.
               <br />
               <br />
@@ -43,11 +151,11 @@
               Ils sont ma source d'inspiration. Mon cocon. La plus formidable
               invention humaine. Les mondes imaginaires deviennent réels,
               habitables. J'y trouve la paix et le calme electrique de mes rêves
-              d'enfant. Moi, simple humain. <br />
+              d'enfant. <br />
               <br />
               J'ai souvent la sensation étrange d'être réellement dans le jeu.
               Que c’est mon propre corps qui bouge sur l’écran. Que mon âme et
-              mon corps se retrouvent. Enfin.
+              mon corps se retrouvent. Moi, simple humain.
             </p>
           </div>
 
