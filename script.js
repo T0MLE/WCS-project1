@@ -58,7 +58,8 @@ menuBtn.addEventListener('click', function() {
   isOpen = !isOpen;
   if (isOpen) {
     menuBtn.classList.add('open');
-    menu.style.height = '150px';
+    menu.style.height = '14vh';
+    menu.style.marginTop = "15vh";
   } else {
     menuBtn.classList.remove('open');
     menu.style.height = '0';
