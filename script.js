@@ -58,10 +58,15 @@ menuBtn.addEventListener('click', function() {
   isOpen = !isOpen;
   if (isOpen) {
     menuBtn.classList.add('open');
-    menu.style.height = '150px';
+    menu.style.height = '20vh';
+    menu.style.marginTop = "7vh";
+    menu.style.paddingBottom = "7vh";
+    
   } else {
     menuBtn.classList.remove('open');
     menu.style.height = '0';
+    menu.style.marginTop = '0';
+    menu.style.paddingBottom = '0';
   }
 });
 
