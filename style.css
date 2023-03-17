@@ -62,18 +62,19 @@
 #sec-experience {
     background-color: var(--first-theme-color);
     padding: 0px 20px 32px 20px;
+    height: 100vh;
 }
 
 #sec-experience h3 {
     color: var(--secondary-color);
-    font-size: 28px;
-    padding: 32px 0px 32px 0px;
+    font-size: 8vw;
+    padding: 32px 0px 48px 0px;
 }
 
 #card-container {
     display: flex;
     width: 100%;
-    height: 550px;
+    height: 75vh;
     overflow-x: scroll;
     overflow-y: hidden;
     margin: auto;
@@ -105,7 +106,7 @@
     color: var(--first-theme-color);
     font-family: 'Press Start 2P', cursive;
     width: 290px;
-    margin: 8px auto 16px;
+    margin: 8px auto 24px;
     display: flex;
     align-items: flex-end;
 }
@@ -120,7 +121,7 @@
     font-size: 20px;
     color: var(--first-theme-color);
     width: 290px;
-    margin: 16px auto;
+    margin: 32px auto;
     text-align: justify;
 }
 
@@ -128,7 +129,7 @@
     display: flex;
     width: 50%;
     justify-content: center;
-    margin: auto;
+    margin: 16px auto;
 }
 .slide-indicator {
     height: 10px;
