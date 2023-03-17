@@ -104,3 +104,40 @@
     transform: scale(1.6);
     opacity: 1;
 }
+
+
+
+.about-me {
+    background-color: var(--secondary-color);
+    width: auto;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .about-me h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 28px;
+    text-align: left;
+    margin-top: 60px;
+    color: var(--first-theme-color);
+    padding: 0 16px 0 16px;
+  }
+  
+  .about-me .description {
+    font-family: var(--second-font);
+    color: var(--first-theme-color);
+    text-align:justify;
+    margin-top: 10px;
+    line-height: normal;
+    font-size: 20px;
+    display: flex;
+    padding: 0 16px 0 16px;
+    }
+  
+  .about-me img {
+    width: 100vw;
+    height: auto;
+  }
