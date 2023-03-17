@@ -35,7 +35,7 @@ h3{
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
-    padding-left: 50px;
+    padding-left: 25px;
     padding-top: 50px;
 }
 
@@ -74,14 +74,21 @@ div#getInTouch h3{
     padding-right: 10%;
 }
 
-
+.textUpsideDown{
+    transform: scaleX(-1);
+}
 
 /* -------------STYLE IMAGE FOOTBALL----------- */
 
 .imageFootball{
-background: url("sources/football.png");
-background-size: auto 100%; 
-color : transparent;
+    background: url("sources/football.png");
+    background-size: auto 100%; 
+    color : transparent;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+
+
 }
 
 
@@ -91,6 +98,8 @@ color : transparent;
     background: url("sources/videogames.png");
     background-size: auto 100%; 
     color : transparent;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
     }
     
     
@@ -100,6 +109,9 @@ color : transparent;
     background: url("sources/fishing.png");
     background-size: auto 100%; 
     color : transparent;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
     }
 
     
@@ -108,10 +120,11 @@ color : transparent;
         background: none;
         background-color: var(--first-theme-color);
         color : var(--secondary-color);
+        transform: rotateY(180deg);
+        transition-duration: 0.6s;
+        transform-style: preserve-3d;
     }
 
-
-    
 
 
 /* -----------------------------------------------------STYLE GETINTOUCH----------------------------------------------------- */
