@@ -20,7 +20,6 @@
 
 div#hobbies{
     background-color: var(--secondary-color);
-    padding-bottom: 32px;
 }
 
 div#getInTouch{
@@ -31,12 +30,11 @@ div#getInTouch{
 /* -----------------------------------------------------STYLE TEXTES----------------------------------------------------- */
 h3{
     font-family: 'Press Start 2P', cursive;
-    height: 100px;
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
-    padding-left: 25px;
-    padding-top: 50px;
+    font-size: 7vw;
+    padding-left: 10vw;
+    padding-top: 10vw;
 }
 
 div#hobbies h3{
@@ -45,6 +43,10 @@ div#hobbies h3{
 
 div#getInTouch h3{
     color : var(--secondary-color);
+}
+
+p {
+    font-size : 4vw;
 }
 
 /* -----------------------------------------------------STYLE HOBBIES----------------------------------------------------- */
@@ -56,24 +58,30 @@ div#getInTouch h3{
     align-items: center;
     width: 80%;
     margin : auto;
-    margin-top: 30px;
+    margin-top: 10vw;
 
 }
 
 .square{
-    width: 100% ;
-    height: 100%;
-    margin-bottom: 20px;
+    width: 80vw ;
+    height: 80vw;
+    margin-bottom: 10vw;
     border-radius: 30px;
     justify-content: center;
     display: flex;
     align-items: center;
     text-align: justify;
     justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+    transform-style: preserve-3d;
 }
 
+/* .square::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+} */
 .textUpsideDown{
     transform: scaleX(-1);
 }
@@ -82,7 +90,8 @@ div#getInTouch h3{
 
 .imageFootball{
     background: url("sources/football.png");
-    background-size: auto 100%; 
+    background-repeat: cover;
+    background-size: contain;
     color : transparent;
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -138,7 +147,6 @@ ul#logos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 60%;
     margin : auto;
     margin-top: 50px;
     padding-bottom: 30px;
@@ -148,10 +156,10 @@ div#logos{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 85%;
+    width: 80vw;
     margin : auto;
-    margin-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     align-items: center;
 }
 
