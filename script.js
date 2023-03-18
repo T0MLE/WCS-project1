@@ -31,28 +31,43 @@ const contact = document.querySelector('.contact-me')
 // CHECKBOX THEME TOGGLE
   const toggleTheme = document.querySelector('#toggle-checkbox');
   const button = document.querySelector('.toggle-theme span');
-  const bckTom = document.getElementById('sec-experience');
+  const templateBlue = document.querySelectorAll('.templateBlue')
+  const templateBlueHobbies = document.querySelectorAll('.templateBlueHobbies')
   
   toggleTheme.addEventListener('change', function() {
       button.classList.toggle('span-move');
       document.body.classList.toggle('blue-theme');
       document.body.classList.toggle('red-theme');
       menu.classList.toggle('blue-theme-menu');
+      // aboutmeblue.style.setProperty('--second-theme-color', 'blue')
+      // aboutmeblue.classList.add('blue')
+      templateBlue.forEach((element) => {
+        element.style.color = 'var(--second-theme-color)';
+      });
+      templateBlueHobbies.forEach((element) => {
+        element.style.backgroundColor = 'var(--second-theme-color)';
+      });
+
+      
       if (document.body.classList.contains('blue-theme')) {
         contact.classList.add('blue-theme-font');
         contact.classList.remove('red-theme-font')
         button.classList.add('button-color-blue');
         button.classList.remove('button-color-red');
-        bckTom.classList.add('red-theme-font')
-        bckTom.classList.remove('blue-theme-font')
+        
+        
         
       } else {
-        bckTom.classList.add('blue-theme-font')
-        bckTom.classList.remove('red-theme-font')
         contact.classList.remove('blue-theme-font');
         contact.classList.add('red-theme-font')
         button.classList.add('button-color-red');
         button.classList.remove('button-color-blue');
+        templateBlue.forEach((element) => {
+          element.style.color = 'var(--first-theme-color)';
+        });
+        templateBlueHobbies.forEach((element) => {
+          element.style.backgroundColor = 'var(--first-theme-color)';
+        });
       }
   });
 // MENU BURGER
@@ -63,8 +78,8 @@ menuBtn.addEventListener('click', function() {
   if (isOpen) {
     menuBtn.classList.add('open');
     menu.style.height = '20vh';
-    menu.style.marginTop = "8vh";
-    menu.style.paddingBottom = "5vh";
+    menu.style.marginTop = "6vh";
+    menu.style.paddingBottom = "4vh";
     
   } else {
     menuBtn.classList.remove('open');
