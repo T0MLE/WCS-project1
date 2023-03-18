@@ -60,7 +60,7 @@
 /* SECTION EXPERIENCE TOM */
 
 #sec-experience {
-    background-color: var(--first-theme-color);
+    /* background-color: var(--first-theme-color); */
     padding: 0px 20px 32px 20px;
 }
 
@@ -253,14 +253,14 @@
   /* Main PAGE */
 
    h1, h2 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: var(--pixel-font);
     text-align: center;
-    padding: 6vh 0 7.5vh 0;
+    padding: 4vh 0 7.5vh 0;
     color: var(--secondary-color);
 }
 
 h1 {
-    font-size: 12vw;
+    font-size: 10vw;
 }
 h2 {
     font-size: 7vw;
@@ -360,9 +360,9 @@ div#hobbies{
     background-color: var(--secondary-color);
 }
 
-div#getInTouch{
+/* div#getInTouch{
     background-color: var(--first-theme-color);
-}
+} */
 
 
 /* -----------------------------------------------------STYLE TEXTES----------------------------------------------------- */
