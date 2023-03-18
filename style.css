@@ -90,7 +90,9 @@
 
 .card {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background-color: var(--secondary-color);
     width: 100%;
     max-width: 338px;
@@ -105,8 +107,8 @@
 .card h4 {
     color: var(--first-theme-color);
     font-family: 'Press Start 2P', cursive;
-    width: 290px;
-    margin: 8px auto 24px;
+    width: 100%;
+    margin: 24px auto 24px;
     display: flex;
     align-items: flex-end;
 }
