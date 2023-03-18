@@ -1,0 +1,18 @@
+/* ----------- SECTION EXPERIENCE ---------------*/
+
+#sec-experience h3 {
+    font-size: 45px;
+}
+
+#indicator-container {
+    display: none;
+}
+
+#card-container {
+    justify-content: space-around;
+}
+
+.card p {
+    width: 100%;
+    font-size: 2.5vh;
+}
