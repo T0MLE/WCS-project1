@@ -5,25 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="desktop.css"
+      media="screen and (min-width: 1000px)"
+    />
   </head>
 
   <body class="red-theme">
     <section id="Omar">
       <nav>
-        <div class="menu-btn">
+        <audio id="myAudio2">
+          <source src="assets/MarioCoin.mp3" type="audio/mpeg" />
+        </audio>
+        <div class="menu-btn" onclick="playAudio2()">
           <div class="menu-btn__lines"></div>
           <div class="menu-btn__lines"></div>
           <div class="menu-btn__lines"></div>
         </div>
         <ul class="menu">
-          <audio id="myAudio2">
-            <source src="assets/MarioCoin.mp3" type="audio/mpeg" />
-          </audio>
-          <li><a href="#about-me" onclick="playAudio2()">About me</a></li>
+          <li><a href="#about-me" class="btnMenu">About me</a></li>
           <li>
-            <a href="#sec-experience" onclick="playAudio2()">Experiences</a>
+            <a href="#sec-experience" class="btnMenu">Experiences</a>
           </li>
-          <li><a href="#hobbies" onclick="playAudio2()">Hobbies</a></li>
+          <li><a href="#hobbies" class="btnMenu">Hobbies</a></li>
         </ul>
         <div class="contact">
           <a href="#" class="contact-me red-theme-font">Contact me</a>
