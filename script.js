@@ -91,6 +91,7 @@ menuBtn.addEventListener('click', function() {
 
 
 menu.addEventListener('click', function() {
+  isOpen = false
   menuBtn.classList.remove('open');
   menu.style.height = '0';
     menu.style.marginTop = '0';
