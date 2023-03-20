@@ -64,6 +64,29 @@ nav {
     font-size: 2vw;
 }
 
+/* ----------- SECTION ABOUT-ME ---------------*/
+
+.about-me h2 {
+    font-size: 45px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    }
+
+.description {
+        display: flex;
+        align-items: center;
+        }   
+
+.slideshow-container img {
+        max-width: 100vw;
+        height: 50vw; 
+        }
+
+
+
 
 /* ----------- SECTION EXPERIENCE ---------------*/
 
