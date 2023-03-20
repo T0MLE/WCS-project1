@@ -84,7 +84,58 @@ nav {
     font-size: 2.5vh;
 }
 
-
 .card {
     max-width: initial;
+}
+
+/* ----------- SECTION HOBBIES ---------------*/
+
+.squareList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 5vw;
+    margin-bottom: 0;
+}
+
+
+.square{
+    width: 28vw ;
+    height: 28vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    align-items: start;
+    padding-top: 5vw;
+}
+
+section#hobbies p {
+    font-size : initial;
+}
+
+div#getInTouch{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    
+}
+
+div#getInTouch h3{
+    font-size: 3vw;
+    padding:0;
+    flex: 5;
+}
+
+div#logos {
+    flex: 3;
+    padding: 0;
+}
+
+.logo{
+    width: 3vw ;
+    height: 3vw;
 }
