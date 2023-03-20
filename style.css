@@ -16,38 +16,40 @@
     scroll-behavior: smooth;
 }
 
-.title {
-    font-family: 'Press Start 2P', cursive;
-}
 
 /* SECTION ABOUT ME SAVERIO */
 
-*
-body {font-family: var(--pixel-font);}
+
 .mySlides {display: none;}
-img {vertical-align: middle; max-width: 100vw;}
+
 
 .about-me {
   background-color: var(--secondary-color);
   width: auto;
-  height:3Ovh;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 50vh;
+  
 }
+
+.about-me-img{
+height: 50vh;
+}
+
 
 .about-me h2 {
   font-family: 'Press Start 2P', cursive;
   font-size: 8vw;
   text-align: left;
-  margin-top: 32px;
+  margin-top: 48px;
   margin-bottom: 10px;
   color: var(--first-theme-color);
   padding: 0 16px 0 16px;
 }
 
-.about-me .description {
+.description {
   font-family: var(--second-font);
   color: var(--first-theme-color);
   text-align:justify;
@@ -59,13 +61,15 @@ img {vertical-align: middle; max-width: 100vw;}
   padding: 0 16px 0 16px;
   }
 
-.about-me img {
-  width: 100vw;
+  .slideshow-container img {
+  max-width: 100vw;
   height: auto; 
+  vertical-align: middle
 }
 
 .slideshow img.active {
   display: block;
+  
 }
 
 /* Slideshow container */
@@ -197,11 +201,23 @@ img {vertical-align: middle; max-width: 100vw;}
   }
   
   .menu {
-    display: none;
+    /* display: none;
     list-style: none;
     margin: 0;
-    padding: 0;
-
+    padding: 0; */
+    background-color: #ab433f73;
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: 0.3s ease-in-out;
   }
   
   .menu li {
@@ -240,38 +256,13 @@ img {vertical-align: middle; max-width: 100vw;}
   .menu-btn.open .menu-btn__lines:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  
   .menu-btn.open .menu-btn__lines:nth-child(2) {
     opacity: 0;
-    
   }
-  
   .menu-btn.open .menu-btn__lines:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   } 
   
-  /* Media query for mobile */
-  @media (max-width: 767px) {
-    .menu-btn {
-      display: flex;
-    }
-  
-    .menu {
-      background-color: #ab433f73;
-      backdrop-filter: blur(10px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 40px;
-      left: 0;
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-      transition: 0.3s ease-in-out;
-    }}
-
     /* CONTACT ME BUTTON */
 
   .contact {
