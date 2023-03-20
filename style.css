@@ -16,16 +16,18 @@
     scroll-behavior: smooth;
 }
 
-.title {
-    font-family: 'Press Start 2P', cursive;
-}
 
 /* SECTION ABOUT ME SAVERIO */
+
+/* *
+body {font-family: var(--pixel-font);} */
+.mySlides {display: none;}
+/* img {; max-width: 100vw;} */
 
 .about-me {
   background-color: var(--secondary-color);
   width: auto;
-  height: 100vh;
+  /* height: 3Ovh; */
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -41,39 +43,73 @@
   padding: 0 16px 0 16px;
 }
 
-.about-me .description {
+.description {
   font-family: var(--second-font);
   color: var(--first-theme-color);
   text-align:justify;
   margin-top: 10px;
+  margin-bottom: 20px;
   line-height: normal;
   font-size: 20px;
   display: flex;
   padding: 0 16px 0 16px;
   }
 
-.about-me img {
-  width: 100vw;
-  height: auto;
+  .slideshow-container img {
+  max-width: 100vw;
+  height: auto; 
+  vertical-align: middle
 }
+
+.slideshow img.active {
+  display: block;
+  
+}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+} 
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
 
 /* SECTION EXPERIENCE TOM */
 
 #sec-experience {
-    background-color: var(--first-theme-color);
+    /* background-color: var(--first-theme-color); */
     padding: 0px 20px 32px 20px;
+    height: 100vh;
 }
 
 #sec-experience h3 {
     color: var(--secondary-color);
-    font-size: 28px;
-    padding: 32px 0px 32px 0px;
+    font-size: 8vw;
+    padding: 48px 0px 64px 0px;
 }
 
 #card-container {
     display: flex;
     width: 100%;
-    height: 550px;
+    height: 70vh;
     overflow-x: scroll;
     overflow-y: hidden;
     margin: auto;
@@ -105,13 +141,14 @@
     color: var(--first-theme-color);
     font-family: 'Press Start 2P', cursive;
     width: 290px;
-    margin: 8px auto 16px;
+    margin: 8px auto 24px;
     display: flex;
     align-items: flex-end;
 }
 
 .card img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 50%;
     margin: 0 auto;
     border-radius: 20px;
 }
@@ -120,7 +157,7 @@
     font-size: 20px;
     color: var(--first-theme-color);
     width: 290px;
-    margin: 16px auto;
+    margin: 32px auto;
     text-align: justify;
 }
 
@@ -128,7 +165,7 @@
     display: flex;
     width: 50%;
     justify-content: center;
-    margin: auto;
+    margin: 16px auto;
 }
 .slide-indicator {
     height: 10px;
@@ -158,11 +195,23 @@
   }
   
   .menu {
-    display: none;
+    /* display: none;
     list-style: none;
     margin: 0;
-    padding: 0;
-
+    padding: 0; */
+    background-color: #ab433f73;
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: 0.3s ease-in-out;
   }
   
   .menu li {
@@ -201,38 +250,13 @@
   .menu-btn.open .menu-btn__lines:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  
   .menu-btn.open .menu-btn__lines:nth-child(2) {
     opacity: 0;
-    
   }
-  
   .menu-btn.open .menu-btn__lines:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   } 
   
-  /* Media query for mobile */
-  @media (max-width: 767px) {
-    .menu-btn {
-      display: flex;
-    }
-  
-    .menu {
-      background-color: #ab433f73;
-      backdrop-filter: blur(10px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 40px;
-      left: 0;
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-      transition: 0.3s ease-in-out;
-    }}
-
     /* CONTACT ME BUTTON */
 
   .contact {
@@ -253,14 +277,14 @@
   /* Main PAGE */
 
    h1, h2 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: var(--pixel-font);
     text-align: center;
-    padding: 6vh 0 7.5vh 0;
+    padding: 4vh 0 7.5vh 0;
     color: var(--secondary-color);
 }
 
 h1 {
-    font-size: 12vw;
+    font-size: 10vw;
 }
 h2 {
     font-size: 7vw;
@@ -360,9 +384,9 @@ div#hobbies{
     background-color: var(--secondary-color);
 }
 
-div#getInTouch{
+/* div#getInTouch{
     background-color: var(--first-theme-color);
-}
+} */
 
 
 /* -----------------------------------------------------STYLE TEXTES----------------------------------------------------- */
