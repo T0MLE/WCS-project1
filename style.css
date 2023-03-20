@@ -385,13 +385,13 @@ div#hobbies{
 
 
 /* -----------------------------------------------------STYLE TEXTES----------------------------------------------------- */
-h3{
+section#hobbies h3{
     font-family: 'Press Start 2P', cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 7vw;
-    padding-left: 10vw;
-    padding-top: 10vw;
+    padding-left: 5vw;
+    padding-top: 5vw;
 }
 
 div#hobbies h3{
@@ -402,7 +402,7 @@ div#getInTouch h3{
     color : var(--secondary-color);
 }
 
-p {
+section#hobbies p {
     font-size : 4vw;
 }
 
