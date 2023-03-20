@@ -64,6 +64,23 @@ nav {
     font-size: 2vw;
 }
 
+/* ----------- SECTION ABOUT-ME ---------------*/
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.about-me h2 {
+    font-size: 45px;
+   
+}
+
+.description {
+    display: flex;
+}
+
 
 /* ----------- SECTION EXPERIENCE ---------------*/
 
