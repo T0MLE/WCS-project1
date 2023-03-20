@@ -109,6 +109,11 @@ function playAudio() {
     var audio1 = document.getElementById("myAudio2");
     audio1.play();
     }
+    
+    function playAudio3() {
+      var audio2 = document.getElementById("myAudio3")
+      audio2.play()
+    }
 // HOBBIES CARDS
 const football = document.querySelector('.imageFootball');
 const videoGame = document.querySelector('.imageVideoGame');

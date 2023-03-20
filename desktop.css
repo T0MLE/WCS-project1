@@ -1,3 +1,70 @@
+/* ----------- SECTION HOMEPAGE ---------------*/
+nav {
+    padding: 7vh;
+}
+
+
+.menu-btn {
+    display : none;
+}
+
+.menu {
+    all: initial;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 2vh;
+}
+
+.menu li a {
+    font-size: 2vw;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px;
+    align-items: center;
+}
+
+.page .img {
+    grid-row: 1 / span 2;
+    margin-left: 5vw;
+    width: 40vw;
+    height: 40vw;
+    margin-right: 3vw;
+  }
+.page h1 {
+    font-size: 5vw;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+   
+}
+.page h2 {
+    font-size: 4vw;
+    text-align: left;
+}
+
+.page p {
+    font-size: 8vw;
+    font-family: var(--pixel-font);
+    text-align: left;
+}
+
+.contact {
+    height: 4.5rem;
+    width: 11rem;
+    border-radius: 5rem;
+}
+
+.contact a {
+    font-size: 2vw;
+}
+
+
 /* ----------- SECTION EXPERIENCE ---------------*/
 
 #sec-experience h3 {
@@ -16,3 +83,4 @@
     width: 100%;
     font-size: 2.5vh;
 }
+
