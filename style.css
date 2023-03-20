@@ -97,6 +97,7 @@ body {font-family: var(--pixel-font);} */
     color: var(--secondary-color);
     font-size: 8vw;
     padding: 48px 0px 48px 0px;
+    font-family: var(--pixel-font);
 }
 
 #card-container {
@@ -139,6 +140,7 @@ body {font-family: var(--pixel-font);} */
     margin: 24px auto 24px;
     display: flex;
     align-items: flex-end;
+    font-size: 2vh;
 }
 
 .card img {

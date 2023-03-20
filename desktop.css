@@ -68,7 +68,7 @@ nav {
 /* ----------- SECTION EXPERIENCE ---------------*/
 
 #sec-experience h3 {
-    font-size: 45px;
+    font-size: 5vw;
 }
 
 #indicator-container {
@@ -84,3 +84,7 @@ nav {
     font-size: 2.5vh;
 }
 
+
+.card {
+    max-width: initial;
+}
