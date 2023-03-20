@@ -36,19 +36,19 @@ nav {
     height: 40vw;
     margin-right: 3vw;
   }
-.page, h1 {
+.page h1 {
     font-size: 5vw;
     margin-top: 0;
     margin-bottom: 10px;
     text-align: left;
    
 }
-.page, h2 {
+.page h2 {
     font-size: 4vw;
     text-align: left;
 }
 
-.page, p {
+.page p {
     font-size: 8vw;
     font-family: var(--pixel-font);
     text-align: left;
