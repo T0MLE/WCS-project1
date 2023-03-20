@@ -99,6 +99,7 @@ body {font-family: var(--pixel-font);} */
     padding: 48px 0px 48px 0px;
 }
 
+
 #card-container {
     display: flex;
     width: 100%;
@@ -385,6 +386,7 @@ div#hobbies{
 
 
 /* -----------------------------------------------------STYLE TEXTES----------------------------------------------------- */
+
 section#hobbies h3{
     font-family: 'Press Start 2P', cursive;
     font-style: normal;
@@ -396,7 +398,14 @@ section#hobbies h3{
 
 div#hobbies h3{
     color : var(--first-theme-color);
+    padding-left: 7.5vw;
+    padding-top: 48px;
 }
+
+div#getInTouch h3{
+  padding-left: 7.5vw;
+}
+
 
 div#getInTouch h3{
     color : var(--secondary-color);
@@ -404,6 +413,9 @@ div#getInTouch h3{
 
 section#hobbies p {
     font-size : 4vw;
+
+
+
 }
 
 /* -----------------------------------------------------STYLE HOBBIES----------------------------------------------------- */
@@ -420,8 +432,8 @@ section#hobbies p {
 }
 
 .square{
-    width: 80vw ;
-    height: 80vw;
+    width: 85vw ;
+    height: 85vw;
     margin-bottom: 10vw;
     border-radius: 30px;
     justify-content: center;
@@ -509,7 +521,7 @@ div#logos{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80vw;
+    width: 85vw;
     margin : auto;
     padding-top: 10vw;
     padding-bottom: 10vw;
@@ -520,3 +532,4 @@ div#logos{
         width: 15% ;
         height: 15%;
 }
+
