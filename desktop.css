@@ -78,6 +78,21 @@ nav {
 }
 
 .description {
+   
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+
+.slideshow-container  {
+    grid-area: 1 / 2 / 3 / 3;
+    width: 100%;
+}
+
+
+.slideshow-container img { 
+    max-width: 100vw;
+    height: auto; 
+    vertical-align: middle
     display: flex;
 }
 
