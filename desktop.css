@@ -77,19 +77,28 @@ nav {
 }
 
 .about-me h2 {
-    font-size: 45px;
-    grid-area: 1 / 1 / 2 / 2;   
+    font-size: 5vw;
+    grid-area: 1 / 1 / 2 / 2;
+    margin-top: 100px;   
+    padding: 28px;
 }
 
 .description {
    
     grid-area: 2 / 1 / 3 / 2;
+    font-size: 20px;
 }
 
 
 .slideshow-container  {
     grid-area: 1 / 2 / 3 / 3;
+    
 }
+
+.slideshow-container img {
+    width: 55vw;
+  }
+
 
 
 /* ----------- SECTION EXPERIENCE ---------------*/
