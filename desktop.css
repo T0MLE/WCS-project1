@@ -158,6 +158,10 @@ div#hobbies h3 {
     
 }
 
+div#hobbies{
+    height: 100vh;
+}
+
 div#getInTouch{
     display: flex;
     justify-content: space-around;
