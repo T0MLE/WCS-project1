@@ -19,16 +19,13 @@
 
 /* SECTION ABOUT ME SAVERIO */
 
-/* *
-body {font-family: var(--pixel-font);} */
 .mySlides {display: none;}
-/* img {; max-width: 100vw;} */
 
 .about-me {
   background-color: var(--secondary-color);
   width: auto;
-  /* height: 3Ovh; */
-  margin: auto;
+  height: 100vh;
+  /* margin: auto; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,9 +69,8 @@ body {font-family: var(--pixel-font);} */
 
 /* Slideshow container */
 .slideshow-container {
-  
   position: relative;
-  margin: auto;
+  
 } 
 
 
