@@ -145,8 +145,7 @@
 }
 
 .card img {
-    max-width: 100%;
-    max-height: 50%;
+    width: 100%;
     margin: 0 auto;
     border-radius: 20px;
 }
@@ -393,7 +392,7 @@ section#hobbies h3{
     font-family: 'Press Start 2P', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 7vw;
+    font-size: 8vw;
     padding-left: 5vw;
     padding-top: 5vw;
 }
