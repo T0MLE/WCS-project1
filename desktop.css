@@ -121,15 +121,15 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin-top: 5vw;
     margin-bottom: 0;
 }
 
 
 .square{
-    width: 28vw ;
-    height: 28vw;
+    width: 30vw ;
+    height: 30vw;
     padding-left: 2vw;
     padding-right: 2vw;
     align-items: start;
@@ -138,6 +138,10 @@ nav {
 
 section#hobbies p {
     font-size : initial;
+}
+
+div#hobbies h3 {
+    padding-left: 3vw;
 }
 
 div#getInTouch{
