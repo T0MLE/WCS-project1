@@ -5,8 +5,6 @@ let sliderIndicator = document.querySelectorAll(
   "#indicator-container .slide-indicator"
 );
 
-cards.forEach((element) => console.log(element.getBoundingClientRect()));
-
 function dot(arr) {
   let count = 0;
   cards.forEach((element) => {
