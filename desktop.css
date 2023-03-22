@@ -1,6 +1,6 @@
 /* ----------- SECTION HOMEPAGE ---------------*/
 nav {
-    padding: 7vh;
+    padding: 3vw;
 }
 
 
@@ -19,6 +19,7 @@ nav {
 
 .menu li a {
     font-size: 2vw;
+    margin: 0 3vw;
 }
 
 .page {
