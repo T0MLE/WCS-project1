@@ -48,7 +48,7 @@
   margin-top: 10px;
   margin-bottom: 20px;
   line-height: normal;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   padding: 0 16px 0 16px;
   }
@@ -377,7 +377,7 @@ h2 {
 
 /* -----------------------------------------------------STYLE DIV----------------------------------------------------- */
 
-div#hobbies{
+div#divHobbies{
     background-color: var(--secondary-color);
 }
 
@@ -397,7 +397,7 @@ section#hobbies h3{
     padding-top: 5vw;
 }
 
-div#hobbies h3{
+div#divHobbies h3{
     color : var(--first-theme-color);
     padding-left: 7.5vw;
     padding-top: 48px;
@@ -412,7 +412,7 @@ div#getInTouch h3{
     color : var(--secondary-color);
 }
 
-section#hobbies p {
+section#divHobbies p {
     font-size : 4vw;
 
 

@@ -183,14 +183,14 @@ section#hobbies p {
     font-size : 1.3vw;
 }
 
-div#hobbies h3 {
+div#divHobbies h3 {
     padding-left: 3vw;
     padding-bottom: 2vw;
     font-size : 5vw;
     
 }
 
-div#hobbies{
+div#divHobbies{
     height: 100vh;
 }
 
