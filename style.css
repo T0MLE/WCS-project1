@@ -39,6 +39,7 @@ body {font-family: var(--pixel-font);} */
   font-size: 8vw;
   text-align: left;
   margin-top: 32px;
+  margin-bottom: 25px;
   color: var(--first-theme-color);
   padding: 0 16px 0 16px;
 }
