@@ -29,12 +29,12 @@ const contact = document.querySelector('.contact-me')
 
 
 // CHECKBOX THEME TOGGLE
-  const toggleTheme = document.querySelector('#toggle-checkbox');
+  const toggleTheme = document.querySelector('.toggle-theme');
   const button = document.querySelector('.toggle-theme span');
   const templateBlue = document.querySelectorAll('.templateBlue')
   const templateBlueHobbies = document.querySelectorAll('.templateBlueHobbies')
   
-  toggleTheme.addEventListener('change', function() {
+  toggleTheme.addEventListener('click', function() {
       button.classList.toggle('span-move');
       document.body.classList.toggle('blue-theme');
       document.body.classList.toggle('red-theme');
