@@ -68,6 +68,7 @@ const contact = document.querySelector(".contact-me");
 // MENU BURGER
 const menuBtn = document.querySelector(".menu-btn");
 let isOpen = false;
+if (document.body.clientWidth < 1000) {
 menuBtn.addEventListener("click", function () {
   isOpen = !isOpen;
   if (isOpen) {
@@ -90,7 +91,7 @@ menu.addEventListener("click", function () {
   menu.style.marginTop = "0";
   menu.style.paddingBottom = "0";
 });
-
+}
 // AUDIO OF MARIO
 function playAudio() {
   var audio = document.getElementById("myAudio");
