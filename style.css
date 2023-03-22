@@ -403,14 +403,6 @@ div#divHobbies h3{
     padding-top: 48px;
 }
 
-div#getInTouch h3{
-  padding-left: 7.5vw;
-}
-
-
-div#getInTouch h3{
-    color : var(--secondary-color);
-}
 
 section#divHobbies p {
     font-size : 4vw;
@@ -534,3 +526,9 @@ div#logos{
         height: 15%;
 }
 
+
+div#getInTouch h3{
+  padding-left: 7.5vw;
+  color : var(--secondary-color);
+  font-size: 7vw;
+}
