@@ -96,7 +96,7 @@ body {font-family: var(--pixel-font);} */
 #sec-experience h3 {
     color: var(--secondary-color);
     font-size: 8vw;
-    padding: 48px 0px 48px 0px;
+    padding: 48px 0px 48px 8px;
     font-family: var(--pixel-font);
 }
 
