@@ -193,11 +193,7 @@ body {font-family: var(--pixel-font);} */
   }
   
   .menu {
-    /* display: none;
-    list-style: none;
-    margin: 0;
-    padding: 0; */
-    background-color: #ab433f73;
+      background-color: #ab433f73;
       backdrop-filter: blur(10px);
       display: flex;
       flex-direction: column;
@@ -288,6 +284,10 @@ h2 {
     font-size: 7vw;
 }
 
+.Mario {
+  font-size: 15vw;
+  font-family: var(--pixel-font);
+}
 
 .img {
     display: flex;
