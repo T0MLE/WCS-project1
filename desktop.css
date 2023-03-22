@@ -89,14 +89,14 @@ nav {
 .slideshow-container  {
     grid-area: 1 / 2 / 3 / 3;
     width: 100%;
+    margin: auto;
+    height: 100vh;
 }
 
 
 .slideshow-container img { 
     max-width: 100vw;
-    height: auto; 
-    vertical-align: middle;
-    display : flex ;
+    height: 100vh;
 }
 
 
