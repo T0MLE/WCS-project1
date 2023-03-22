@@ -5,8 +5,6 @@ let sliderIndicator = document.querySelectorAll(
   "#indicator-container .slide-indicator"
 );
 
-cards.forEach((element) => console.log(element.getBoundingClientRect()));
-
 function dot(arr) {
   let count = 0;
   cards.forEach((element) => {
@@ -30,24 +28,24 @@ const menu = document.querySelector(".menu");
 const contact = document.querySelector(".contact-me");
 
 // CHECKBOX THEME TOGGLE
-const toggleTheme = document.querySelector("#toggle-checkbox");
-const button = document.querySelector(".toggle-theme span");
-const templateBlue = document.querySelectorAll(".templateBlue");
-const templateBlueHobbies = document.querySelectorAll(".templateBlueHobbies");
+  const toggleTheme = document.querySelector('.toggle-theme');
+  const button = document.querySelector('.toggle-theme span');
+  const templateBlue = document.querySelectorAll('.templateBlue')
+  const templateBlueHobbies = document.querySelectorAll('.templateBlueHobbies')
+  
+  toggleTheme.addEventListener('click', function() {
+      button.classList.toggle('span-move');
+      document.body.classList.toggle('blue-theme');
+      document.body.classList.toggle('red-theme');
+      menu.classList.toggle('blue-theme-menu');
+      templateBlue.forEach((element) => {
+        element.style.color = 'var(--second-theme-color)';
+      });
+      templateBlueHobbies.forEach((element) => {
+        element.style.backgroundColor = 'var(--second-theme-color)';
+      });
 
-toggleTheme.addEventListener("change", function () {
-  button.classList.toggle("span-move");
-  document.body.classList.toggle("blue-theme");
-  document.body.classList.toggle("red-theme");
-  menu.classList.toggle("blue-theme-menu");
-  // aboutmeblue.style.setProperty('--second-theme-color', 'blue')
-  // aboutmeblue.classList.add('blue')
-  templateBlue.forEach((element) => {
-    element.style.color = "var(--second-theme-color)";
-  });
-  templateBlueHobbies.forEach((element) => {
-    element.style.backgroundColor = "var(--second-theme-color)";
-  });
+
 
   if (document.body.classList.contains("blue-theme")) {
     contact.classList.add("blue-theme-font");

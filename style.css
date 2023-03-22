@@ -39,6 +39,7 @@ body {font-family: var(--pixel-font);} */
   font-size: 8vw;
   text-align: left;
   margin-top: 32px;
+  margin-bottom: 25px;
   color: var(--first-theme-color);
   padding: 0 16px 0 16px;
 }
@@ -99,7 +100,8 @@ body {font-family: var(--pixel-font);} */
 #sec-experience h3 {
     color: var(--secondary-color);
     font-size: 8vw;
-    padding: 48px 0px 48px 0px;
+    padding: 48px 0px 48px 8px;
+    font-family: var(--pixel-font);
 }
 
 
@@ -143,6 +145,7 @@ body {font-family: var(--pixel-font);} */
     margin: 24px auto 24px;
     display: flex;
     align-items: flex-end;
+    font-size: 2vh;
 }
 
 .card img {
@@ -194,11 +197,7 @@ body {font-family: var(--pixel-font);} */
   }
   
   .menu {
-    /* display: none;
-    list-style: none;
-    margin: 0;
-    padding: 0; */
-    background-color: #ab433f73;
+      background-color: #ab433f73;
       backdrop-filter: blur(10px);
       display: flex;
       flex-direction: column;
@@ -289,6 +288,10 @@ h2 {
     font-size: 7vw;
 }
 
+.Mario {
+  font-size: 15vw;
+  font-family: var(--pixel-font);
+}
 
 .img {
     display: flex;

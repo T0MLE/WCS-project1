@@ -1,6 +1,6 @@
 /* ----------- SECTION HOMEPAGE ---------------*/
 nav {
-    padding: 7vh;
+    padding: 3vw;
 }
 
 
@@ -19,6 +19,7 @@ nav {
 
 .menu li a {
     font-size: 2vw;
+    margin: 0 3vw;
 }
 
 .page {
@@ -97,10 +98,45 @@ nav {
 }
 
 
+/* ----------- SECTION ABOUT-ME ---------------*/
+
+.about-me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: (1fr 5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.about-me h2 {
+    font-size: 5vw;
+    grid-area: 1 / 1 / 2 / 2;
+    margin-top: 100px;   
+    padding: 28px;
+}
+
+.description {
+   
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 20px;
+}
+
+
+.slideshow-container  {
+    grid-area: 1 / 2 / 3 / 3;
+    
+}
+
+.slideshow-container img {
+    width: 55vw;
+  }
+
+
+
 /* ----------- SECTION EXPERIENCE ---------------*/
 
 #sec-experience h3 {
-    font-size: 45px;
+    font-size: 5vw;
 }
 
 #indicator-container {
@@ -116,21 +152,25 @@ nav {
     font-size: 2.5vh;
 }
 
+.card {
+    max-width: initial;
+}
+
 /* ----------- SECTION HOBBIES ---------------*/
 
 .squareList {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin-top: 5vw;
     margin-bottom: 0;
 }
 
 
 .square{
-    width: 28vw ;
-    height: 28vw;
+    width: 30vw ;
+    height: 30vw;
     padding-left: 2vw;
     padding-right: 2vw;
     align-items: start;
@@ -139,6 +179,10 @@ nav {
 
 section#hobbies p {
     font-size : initial;
+}
+
+div#hobbies h3 {
+    padding-left: 3vw;
 }
 
 div#getInTouch{
@@ -167,4 +211,3 @@ div#logos {
     width: 3vw ;
     height: 3vw;
 }
-
