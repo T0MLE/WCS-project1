@@ -1,7 +1,6 @@
 /* ----------- SECTION HOMEPAGE ---------------*/
 nav {
     padding: 1.5vw;
-    margin-bottom: 3vw;
 }
 
 
@@ -34,8 +33,8 @@ nav {
 .page .img {
     grid-row: 1 / span 2;
     margin-left: 5vw;
-    width: 40vw;
-    height: 40vw;
+    width: 35vw;
+    height: 35vw;
     margin-right: 3vw;
   }
 .page h1 {
@@ -67,21 +66,28 @@ nav {
     font-size: 150%;
 }
 
+.toggle-button {
+    grid-column: 1 / span 2;
+    margin-top: -5vh;
+
+}
+
 /* ----------- SECTION ABOUT-ME ---------------*/
 
 .about-me {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 60% 40%;
     grid-template-rows: 20% 80%;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    padding-left: 8px;
+    height: 39vw;
 }
 
 .about-me h2 {
-    font-size: 5vw;
+    font-size: 3vw;
     grid-area: 1 / 1 / 2 / 2;
     margin-top: 60px;   
-    padding: 28px;
     
 
 }
@@ -89,28 +95,38 @@ nav {
 .description {
     grid-area: 2 / 1 / 3 / 2;
     font-size: 24px;
-    padding: 32px 80px;
     align-items: center;
+    margin-right: 24px;
 }
 
 
 .slideshow-container  {
      grid-area: 1 / 2 / 3 / 3;
-    width: 100%;
+     width: 39vw;
+     position: absolute;
+     right: 0;
     margin: auto;
-    height: 100vh;
 }
 
 .slideshow-container img {
-    width: 55vw;
-    height: 100vh;
+    width: 39vw;
+}
+
+.mySlides {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 
 /* ----------- SECTION EXPERIENCE ---------------*/
+#sec-experience {
+    padding: 0px 20px 10vh 20px;
+
+}
 
 #sec-experience h3 {
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 #indicator-container {
@@ -127,6 +143,7 @@ nav {
 }
 
 .card {
+    height: 72vh;
     max-width: initial;
 }
 
@@ -158,7 +175,7 @@ section#hobbies p {
 div#divHobbies h3 {
     padding-left: 3vw;
     padding-bottom: 2vw;
-    font-size : 5vw;
+    font-size : 3vw;
     
 }
 
